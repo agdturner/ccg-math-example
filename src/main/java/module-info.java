@@ -21,4 +21,5 @@ module uk.ac.leeds.ccg.math.example {
     
     requires transitive uk.ac.leeds.ccg.math;
     
+    exports uk.ac.leeds.ccg.math.example;
 }
