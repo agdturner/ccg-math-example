@@ -29,7 +29,9 @@ public class Arithmetic {
     public static void main(String[] args) {
         
         // The square root of 2.
+        System.out.println("-------------------------------------------------");
         System.out.println("Consider the square root of 2 which is irrational");
+        System.out.println("-------------------------------------------------");
         System.out.println("Use a Math_BigRationalSqrt and write out the "
                 + "number to the order of magnitude -50");
         Math_BigRationalSqrt root2 = new Math_BigRationalSqrt(2, 0);
@@ -53,7 +55,17 @@ public class Arithmetic {
                 + "Math_BigRationalSqrt we can get the exact result:");
         System.out.println("root2.multiply(root2).getSqrt() = " 
                 + (root2.multiply(root2).getSqrt()));
-        
+        oom = -200;
+        System.out.println("root2 to Order of Magnitude " + oom + " = " + 
+                    root2.toBigDecimal(oom).toPlainString());
+                System.out.println();
+        System.out.println("------------------------------------------"
+                + "----------");        
+        System.out.println("Consider floating point (im)precision more"
+                + " generally");
+        System.out.println("------------------------------------------"
+                + "----------");
+
         // Some work with rational numbers
         float tenth_float = 1.0f/10.0f;
 //        float ninth_float = 1.0f/9.0f;
