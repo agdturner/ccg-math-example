@@ -15,6 +15,7 @@
  */
 package uk.ac.leeds.ccg.math.example;
 
+import uk.ac.leeds.ccg.math.number.Math_BigRational;
 import uk.ac.leeds.ccg.math.number.Math_BigRationalSqrt;
 
 /**
@@ -28,12 +29,51 @@ public class Arithmetic {
         
         // The square root of 2.
         Math_BigRationalSqrt root2 = new Math_BigRationalSqrt(2, 0);
-        for (int i = 0; i < 100; i ++) {
+        for (int i = 0; i < 50; i ++) {
             int oom = -i;
             System.out.println("root2 to Order of Magnitude " + oom + ": " + 
                     root2.toBigDecimal(oom).toPlainString());
         }
         
+        // Some work with rational numbers
+        float tenth_float = 1.0f/10.0f;
+//        float ninth_float = 1.0f/9.0f;
+//        float seventh_float = 1.0f/7.0f;
+//        float sixth_float = 1.0f/6.0f;
+//        float fifth_float = 1.0f/5.0f;
+//        float third_float = 1.0f/3.0f;
+        double tenth_double = 1.0d/10.0d;
+//        double ninth_double = 1.0d/9.0d;
+//        double seventh_double = 1.0d/7.0d;
+//        double sixth_double = 1.0d/6.0d;
+//        double fifth_double = 1.0d/5.0d;
+//        double third_double = 1.0d/3.0d;
+        Math_BigRational tenth_br = Math_BigRational.valueOf(1, 10);
+//        Math_BigRational ninth_br = Math_BigRational.valueOf(1, 9);
+//        Math_BigRational seventh_br = Math_BigRational.valueOf(1, 7);
+//        Math_BigRational sixth_br = Math_BigRational.valueOf(1, 6);
+//        Math_BigRational fifth_br = Math_BigRational.valueOf(1, 5);
+//        Math_BigRational third_br = Math_BigRational.valueOf(1, 5);
+        
+        float sum_float = 0.0f;
+        double sum_double = 0.0d;
+        Math_BigRational sum_br = Math_BigRational.ZERO;
+        for (int i = 0; i < 100; i ++) {
+            sum_float += tenth_float;
+            sum_double += tenth_double;
+            sum_br = sum_br.add(tenth_br);
+        }
+        System.out.println("1.0f/10.0f added to itself 100 times = " + sum_float);
+        System.out.println("1.0d/10.0d added to itself 100 times = " + sum_double);
+        System.out.println("Math_BigRational.valueOf(1, 10) added to itself 100 times = " + sum_br);
+        for (int i = 0; i < 9999900; i ++) {
+            sum_float += tenth_float;
+            sum_double += tenth_double;
+            sum_br = sum_br.add(tenth_br);
+        }
+        System.out.println("1.0f/10.0f added to itself 1M times = " + sum_float);
+        System.out.println("1.0d/10.0d added to itself 1M times = " + sum_double);
+        System.out.println("Math_BigRational.valueOf(1, 10) added to itself 1M times = " + sum_br);
     }
     
 }
