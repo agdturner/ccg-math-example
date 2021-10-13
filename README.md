@@ -1,10 +1,10 @@
 # ccg-math-example
-An example use of [ccg-math](https://github.com/agdturner/ccg-math).
-The [pom.xml](https://github.com/agdturner/ccg-math-example/blob/pom.xml) and the [module-info.java](https://github.com/agdturner/ccg-math-example/blob/main/src/main/java/module-info.java) provide the set up.
+- An example use of [ccg-math](https://github.com/agdturner/ccg-math).
+- The [pom.xml](https://github.com/agdturner/ccg-math-example/blob/pom.xml) and the [module-info.java](https://github.com/agdturner/ccg-math-example/blob/main/src/main/java/module-info.java) provide the set up.
 
 ## Requirements
-[Maven](https://maven.apache.org/).
-Java version 11 or higher.
+- [Maven](https://maven.apache.org/).
+- Java version 11 or higher.
 
 ## How to run
 - Fork/clone/download this repository.
@@ -12,7 +12,7 @@ Java version 11 or higher.
 - Run [Arithmetic.jar](https://github.com/agdturner/ccg-math-example/blob/main/src/main/java/uk/ac/leeds/ccg/math/example/Arithmetic.java)
 
 ## What to expect
-It should take a second or two to run and produce the following output:
+- It should take a second or two to run and produce the following output:
 ```
 -------------------------------------------------
 Consider the square root of 2 which is irrational
@@ -45,5 +45,5 @@ BigDecimal is great, but a single BigDecimal cannot accurately represent numbers
 ```
 
 ## What next
-Have a look at [Arithmetic.jar](https://github.com/agdturner/ccg-math-example/blob/main/src/main/java/uk/ac/leeds/ccg/math/example/Arithmetic.java) and do some experimenting.
-Let us know if you want more examples or encounter any issues.
+- Have a look at [Arithmetic.jar](https://github.com/agdturner/ccg-math-example/blob/main/src/main/java/uk/ac/leeds/ccg/math/example/Arithmetic.java) and do some experimenting.
+- Let us know if you want more examples or encounter any issues.
