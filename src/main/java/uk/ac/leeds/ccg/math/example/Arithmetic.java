@@ -53,8 +53,8 @@ public class Arithmetic {
                 + (Math.sqrt(2.0d) * Math.sqrt(2.0d)));
         System.out.println("... so there is an error with double, but with "
                 + "Math_BigRationalSqrt we can get the exact result:");
-        System.out.println("root2.multiply(root2).getSqrt() = " 
-                + (root2.multiply(root2).getSqrt()));
+        System.out.println("root2.multiply(root2, oom).getSqrt() = " 
+                + (root2.multiply(root2, oom).getSqrt()));
         oom = -200;
         System.out.println("root2 to Order of Magnitude " + oom + " = " + 
                     root2.toBigDecimal(oom).toPlainString());
@@ -119,8 +119,9 @@ public class Arithmetic {
         System.out.println("Math_BigRational.valueOf(1, 10) added to itself 1M "
                 + "times = " + sum_br);
         System.out.println("BigDecimal is great, but a single BigDecimal "
-                + "cannot accurately represent numbers like a third. Two of "
-                + "them can, which is exactly how Math_BigRational stores it.");
+                + "cannot accurately represent some commonly wanted rational "
+                + "numbers as they have a non-terminating decimal expression, "
+                + "e.g. a third.");
     }
     
 }

@@ -16,7 +16,7 @@
         <url>git@github.com:agdturner/ccg-math-example.git</url>
         <connection>scm:git:git@github.com:agdturner/ccg-math-example.git</connection>
         <developerConnection>scm:git:git@github.com:agdturner/ccg-math-example</developerConnection>
-        <tag>ccg-math-2.0</tag>
+        <tag>ccg-math-example-1.0</tag>
     </scm>
     <licenses>
         <license>
@@ -43,7 +43,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <ccg-math.version>2.0</ccg-math.version>
+        <ccg-math.version>2.0.7</ccg-math.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <junit.version>5.7.0</junit.version>
